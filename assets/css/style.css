@@ -1,0 +1,655 @@
+/* ==============================================
+   Rishitha Reddy — Professional Portfolio
+   AIML / Cybersecurity Research
+   Aesthetic: Editorial, Refined, Academic
+   ============================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap');
+
+:root {
+  --bg: #fafaf6;
+  --surface: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --text-tertiary: #8a8a85;
+  --accent: #7a1f2b;
+  --accent-soft: #a14552;
+  --border: #e8e6df;
+  --line: #d4d4cf;
+
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Source Serif 4', 'Georgia', serif;
+
+  --max-w: 920px;
+  --gutter: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.65;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.container-wide {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ---------- Header / Nav ---------- */
+
+header.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(250, 250, 246, 0.92);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.brand .accent {
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--accent);
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 6rem 0 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hero .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 4.4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.hero .tagline {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.5;
+  margin-bottom: 2.25rem;
+}
+
+.hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.92rem;
+}
+
+.hero-meta a {
+  color: var(--text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.hero-meta a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.hero-meta .meta-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+/* ---------- Sections ---------- */
+
+section.block {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section.block:last-of-type {
+  border-bottom: none;
+}
+
+.section-eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-eyebrow::before {
+  content: "";
+  width: 36px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 2rem;
+  letter-spacing: -0.005em;
+}
+
+.prose {
+  max-width: 720px;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.prose p {
+  margin-bottom: 1.25rem;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.prose em {
+  font-family: var(--font-serif);
+}
+
+/* ---------- Value Proposition Card ---------- */
+
+.value-prop {
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  padding: 2.5rem 2.75rem;
+  max-width: 800px;
+  margin-top: 1rem;
+}
+
+.value-prop .vp-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.value-prop blockquote {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.value-prop blockquote::before {
+  content: "“";
+  font-size: 3rem;
+  color: var(--accent);
+  line-height: 0;
+  vertical-align: -0.4em;
+  margin-right: 0.2rem;
+}
+
+.value-prop blockquote::after {
+  content: "”";
+  font-size: 3rem;
+  color: var(--accent);
+  line-height: 0;
+  vertical-align: -0.55em;
+  margin-left: 0.1rem;
+}
+
+/* ---------- Skills grid ---------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-block h4 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.skill-block ul {
+  list-style: none;
+}
+
+.skill-block li {
+  padding: 0.35rem 0;
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+/* ---------- Artifacts list ---------- */
+
+.artifact-list {
+  margin-top: 2rem;
+}
+
+.artifact-entry {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+  align-items: baseline;
+  text-decoration: none;
+  color: inherit;
+  transition: padding-left 0.3s ease;
+}
+
+.artifact-entry:hover {
+  padding-left: 0.75rem;
+}
+
+.artifact-entry:first-child {
+  border-top: 1px solid var(--line);
+}
+
+.artifact-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--accent);
+  font-style: italic;
+}
+
+.artifact-info h3 {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: var(--text-primary);
+}
+
+.artifact-info p {
+  color: var(--text-secondary);
+  font-size: 0.98rem;
+}
+
+.artifact-action {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.artifact-action::after {
+  content: " →";
+}
+
+.artifact-pending {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.artifact-pending:hover {
+  padding-left: 0;
+}
+
+.artifact-pending .artifact-action {
+  color: var(--text-tertiary);
+}
+
+.artifact-pending .artifact-action::after {
+  content: "  ◦ pending";
+}
+
+/* ---------- Artifact detail page ---------- */
+
+.artifact-header {
+  padding: 5rem 0 3rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.back-link {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.back-link::before {
+  content: "← ";
+}
+
+.artifact-meta {
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.artifact-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.artifact-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+}
+
+/* ---------- Artifact body ---------- */
+
+.artifact-section {
+  padding: 3.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.artifact-section:last-of-type {
+  border-bottom: none;
+}
+
+.field-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.field-label::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.field-body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 800px;
+}
+
+.field-body p {
+  margin-bottom: 1rem;
+}
+
+.field-body p:last-child {
+  margin-bottom: 0;
+}
+
+.field-body strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.field-body ul, .field-body ol {
+  margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.field-body li {
+  margin-bottom: 0.45rem;
+}
+
+/* ---------- Infographic feature ---------- */
+
+.infographic-block {
+  padding: 3rem 0;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.infographic-frame {
+  background: var(--bg);
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 1200px;
+  border: 1px solid var(--line);
+}
+
+.infographic-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.download-row {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.btn.primary:hover {
+  background: var(--text-primary);
+  border-color: var(--text-primary);
+}
+
+/* ---------- References ---------- */
+
+.references {
+  background: var(--surface);
+  padding: 2.5rem;
+  border-left: 3px solid var(--line);
+}
+
+.references p.ref {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 1rem;
+}
+
+.references p.ref:last-child {
+  margin-bottom: 0;
+}
+
+.references a {
+  color: var(--accent);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.references a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer.site-footer {
+  padding: 3rem 0;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+footer.site-footer p {
+  margin-bottom: 0.5rem;
+}
+
+footer.site-footer .mono {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+
+  .artifact-entry {
+    grid-template-columns: 50px 1fr;
+    gap: 1rem;
+  }
+
+  .artifact-action {
+    grid-column: 2;
+    margin-top: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 1.25rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+  }
+
+  .infographic-frame {
+    padding: 0.5rem;
+  }
+
+  .value-prop {
+    padding: 1.75rem;
+  }
+}

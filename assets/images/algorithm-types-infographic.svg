@@ -1,0 +1,198 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1700" font-family="'Georgia', 'Cambria', serif">
+  <!-- Background -->
+  <rect width="1400" height="1700" fill="#fafaf6"/>
+
+  <!-- Header -->
+  <text x="700" y="80" text-anchor="middle" font-size="42" font-weight="600" fill="#1a1a1a" letter-spacing="0.5">Machine Learning Algorithms</text>
+  <text x="700" y="115" text-anchor="middle" font-size="20" font-style="italic" fill="#5a5a5a" font-family="'Georgia', serif">A Visual Framework Organized by Application Domain &amp; Learning Style</text>
+
+  <!-- Horizontal rule under title -->
+  <line x1="500" y1="140" x2="900" y2="140" stroke="#7a1f2b" stroke-width="2"/>
+
+  <!-- Legend -->
+  <g transform="translate(350, 175)">
+    <rect x="0" y="0" width="700" height="48" fill="none" stroke="#d4d4cf" stroke-width="1"/>
+    <text x="20" y="30" font-size="13" font-weight="600" fill="#1a1a1a" letter-spacing="1.5">LEGEND</text>
+
+    <circle cx="130" cy="24" r="6" fill="#2c3e5d"/>
+    <text x="145" y="29" font-size="13" fill="#1a1a1a" font-family="'Helvetica Neue', Helvetica, sans-serif">Supervised</text>
+
+    <circle cx="260" cy="24" r="6" fill="#5a5a5a"/>
+    <text x="275" y="29" font-size="13" fill="#1a1a1a" font-family="'Helvetica Neue', Helvetica, sans-serif">Unsupervised</text>
+
+    <circle cx="400" cy="24" r="6" fill="#7a1f2b"/>
+    <text x="415" y="29" font-size="13" fill="#1a1a1a" font-family="'Helvetica Neue', Helvetica, sans-serif">Generative / Self-Supervised</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- SECTION 1: TABULAR DATA -->
+  <!-- ============================================ -->
+  <g transform="translate(60, 270)">
+    <!-- Section header band -->
+    <rect x="0" y="0" width="1280" height="46" fill="#2c3e5d"/>
+    <text x="20" y="30" font-size="22" font-weight="600" fill="#fafaf6" letter-spacing="2">I.  TABULAR DATA</text>
+    <text x="1260" y="30" text-anchor="end" font-size="13" font-style="italic" fill="#cfd4dc" font-family="'Georgia', serif">Structured rows &amp; columns</text>
+
+    <!-- Card 1: Linear Regression -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Linear Regression</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Models a linear relationship between</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">input features and a continuous target.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">House price prediction</text>
+    </g>
+
+    <!-- Card 2: Logistic Regression -->
+    <g transform="translate(435, 70)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Logistic Regression</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Outputs a probability for class</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">membership using a sigmoid curve.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Fraud detection, spam filtering</text>
+    </g>
+
+    <!-- Card 3: Decision Tree -->
+    <g transform="translate(870, 70)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Decision Tree</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Splits data through a hierarchy of</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">feature-based yes/no questions.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Credit risk scoring</text>
+    </g>
+
+    <!-- Card 4: Random Forest -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Random Forest</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Ensemble of many decision trees</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">that vote on the final prediction.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Customer churn prediction</text>
+    </g>
+
+    <!-- Card 5: K-Means -->
+    <g transform="translate(435, 260)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#5a5a5a"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">K-Means Clustering</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">UNSUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Groups unlabeled points into k</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">clusters by minimizing distance.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Customer segmentation</text>
+    </g>
+
+    <!-- Card 6: PCA -->
+    <g transform="translate(870, 260)">
+      <rect x="0" y="0" width="410" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="385" cy="22" r="6" fill="#5a5a5a"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">PCA</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">UNSUPERVISED</text>
+      <line x1="20" y1="70" x2="80" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="92" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Reduces dimensionality while</text>
+      <text x="20" y="110" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">preserving the most variance.</text>
+      <text x="20" y="143" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="160" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Feature engineering, visualization</text>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- SECTION 2: COMPUTER VISION -->
+  <!-- ============================================ -->
+  <g transform="translate(60, 790)">
+    <rect x="0" y="0" width="1280" height="46" fill="#2d5a3d"/>
+    <text x="20" y="30" font-size="22" font-weight="600" fill="#fafaf6" letter-spacing="2">II.  COMPUTER VISION</text>
+    <text x="1260" y="30" text-anchor="end" font-size="13" font-style="italic" fill="#cfd9d0" font-family="'Georgia', serif">Image &amp; video understanding</text>
+
+    <!-- Card: CNN (full-width, taller) -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="1280" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="1255" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="22" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Convolutional Neural Network (CNN)</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED  &#8226;  DEEP LEARNING</text>
+      <line x1="20" y1="70" x2="160" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="95" font-size="14" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Detects spatial patterns in images by sliding learned filters across pixel grids. Stacked</text>
+      <text x="20" y="115" font-size="14" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">convolutional layers progressively capture edges, textures, parts, and full objects.</text>
+      <text x="20" y="148" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="165" font-size="14" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Medical imaging diagnosis  &#8226;  Object detection (ResNet, YOLO)  &#8226;  Facial recognition</text>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- SECTION 3: NLP -->
+  <!-- ============================================ -->
+  <g transform="translate(60, 1080)">
+    <rect x="0" y="0" width="1280" height="46" fill="#7a1f2b"/>
+    <text x="20" y="30" font-size="22" font-weight="600" fill="#fafaf6" letter-spacing="2">III.  NATURAL LANGUAGE PROCESSING</text>
+    <text x="1260" y="30" text-anchor="end" font-size="13" font-style="italic" fill="#e8c9cc" font-family="'Georgia', serif">Language understanding</text>
+
+    <!-- Card: Transformer -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="1280" height="170" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="1255" cy="22" r="6" fill="#2c3e5d"/>
+      <text x="20" y="35" font-size="22" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Transformer (BERT family)</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SUPERVISED  &#8226;  ATTENTION-BASED</text>
+      <line x1="20" y1="70" x2="160" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="95" font-size="14" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Uses self-attention to model how every word in a sequence relates to every other word,</text>
+      <text x="20" y="115" font-size="14" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">producing rich bidirectional context for downstream language tasks.</text>
+      <text x="20" y="148" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="165" font-size="14" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Sentiment analysis  &#8226;  Document classification  &#8226;  Named entity recognition</text>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- SECTION 4: GENERATIVE AI -->
+  <!-- ============================================ -->
+  <g transform="translate(60, 1370)">
+    <rect x="0" y="0" width="1280" height="46" fill="#8b6f1f"/>
+    <text x="20" y="30" font-size="22" font-weight="600" fill="#fafaf6" letter-spacing="2">IV.  GENERATIVE AI</text>
+    <text x="1260" y="30" text-anchor="end" font-size="13" font-style="italic" fill="#e8dcb8" font-family="'Georgia', serif">Content creation &amp; synthesis</text>
+
+    <!-- Card: GPT -->
+    <g transform="translate(0, 70)">
+      <rect x="0" y="0" width="625" height="200" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="600" cy="22" r="6" fill="#7a1f2b"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">GPT (Large Language Model)</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">SELF-SUPERVISED  &#8226;  GENERATIVE</text>
+      <line x1="20" y1="70" x2="160" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="95" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">A decoder-only transformer trained to predict</text>
+      <text x="20" y="113" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">the next token, producing fluent, contextual</text>
+      <text x="20" y="131" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">text across virtually any domain.</text>
+      <text x="20" y="170" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="188" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">Conversational AI, content generation</text>
+    </g>
+
+    <!-- Card: Diffusion -->
+    <g transform="translate(655, 70)">
+      <rect x="0" y="0" width="625" height="200" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+      <circle cx="600" cy="22" r="6" fill="#7a1f2b"/>
+      <text x="20" y="35" font-size="20" font-weight="700" fill="#1a1a1a" font-family="'Georgia', serif">Diffusion Models</text>
+      <text x="20" y="58" font-size="11" font-weight="600" fill="#7a1f2b" letter-spacing="1.5" font-family="'Helvetica Neue', sans-serif">GENERATIVE  &#8226;  DEEP LEARNING</text>
+      <line x1="20" y1="70" x2="160" y2="70" stroke="#7a1f2b" stroke-width="1"/>
+      <text x="20" y="95" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">Learns to reverse a noising process,</text>
+      <text x="20" y="113" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">progressively denoising random pixels into</text>
+      <text x="20" y="131" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', sans-serif">coherent images guided by text prompts.</text>
+      <text x="20" y="170" font-size="11" font-weight="600" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">USE CASE</text>
+      <text x="20" y="188" font-size="13" font-style="italic" fill="#1a1a1a" font-family="'Georgia', serif">AI image generation (Stable Diffusion, DALL-E)</text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="700" y="1670" text-anchor="middle" font-size="11" fill="#5a5a5a" letter-spacing="1" font-family="'Helvetica Neue', sans-serif">AIML-501  &#8226;  MODEL DEVELOPMENT  &#8226;  PROFESSIONAL PORTFOLIO ARTIFACT  &#8226;  RISHITHA REDDY</text>
+</svg>
