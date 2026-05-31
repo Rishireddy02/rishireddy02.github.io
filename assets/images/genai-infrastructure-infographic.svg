@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1663" font-family="'Georgia', 'Cambria', serif">
+  <rect x="0" y="0" width="1400" height="1663" fill="#fafaf6"/>
+  <text x="700" y="78" font-size="42" fill="#1a1a1a" font-weight="600" text-anchor="middle" font-family="'Georgia', 'Cambria', serif" letter-spacing="0.5">Generative AI: Training Process &amp; Costs</text>
+  <text x="700" y="112" font-size="19" fill="#5a5a5a" font-style="italic" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">How Large Language Models Are Built — and What Each Step Demands in Data, Compute, Energy &amp; Time</text>
+  <line x1="430" y1="138" x2="970" y2="138" stroke="#7a1f2b" stroke-width="2"/>
+  <g transform="translate(60,175)">
+  <rect x="0" y="0" width="1280" height="46" fill="#7a1f2b"/>
+  <text x="20" y="30" font-size="22" fill="#fafaf6" font-weight="600" font-family="'Georgia', 'Cambria', serif" letter-spacing="2">I.  THE TRAINING PIPELINE</text>
+  <text x="1260" y="30" font-size="13" fill="#e8cdd2" font-style="italic" text-anchor="end" font-family="'Georgia', 'Cambria', serif">From raw data to deployed model</text>
+  <g transform="translate(0,70)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">1</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Data Collection &amp; Curation</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Crawl the public web, books, and code; filter, deduplicate, and remove low-quality or unsafe text.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">DATA</text>
+  </g>
+  <line x1="42" y1="138" x2="42" y2="148" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,148)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">2</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Tokenization &amp; Preprocessing</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Convert cleaned text into tokens and assemble them into uniform training sequences.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">DATA</text>
+  </g>
+  <line x1="42" y1="216" x2="42" y2="226" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,226)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">3</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Pre-Training  (self-supervised)</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Predict the next token across trillions of tokens. This is the compute-, energy-, and time-heavy core.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">COMPUTE · ENERGY · TIME</text>
+  </g>
+  <line x1="42" y1="294" x2="42" y2="304" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,304)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">4</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Supervised Fine-Tuning (SFT)</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Train on curated instruction–response pairs so the model learns to follow human directions.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">DATA</text>
+  </g>
+  <line x1="42" y1="372" x2="42" y2="382" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,382)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">5</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Alignment  (RLHF)</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">A reward model plus reinforcement learning from human feedback shapes helpful, safe responses.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">DATA · COMPUTE</text>
+  </g>
+  <line x1="42" y1="450" x2="42" y2="460" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,460)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">6</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Evaluation &amp; Red-Teaming</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Benchmark accuracy and stress-test for bias, hallucination, and safety failures before release.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">TIME</text>
+  </g>
+  <line x1="42" y1="528" x2="42" y2="538" stroke="#d4d4cf" stroke-width="2"/>
+  <g transform="translate(0,538)">
+  <rect x="0" y="0" width="1280" height="68" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <circle cx="42" cy="34" r="22" fill="#fafaf6" stroke="#7a1f2b" stroke-width="2"/>
+  <text x="42" y="41" font-size="22" fill="#7a1f2b" font-weight="700" text-anchor="middle" font-family="'Georgia', 'Cambria', serif">7</text>
+  <text x="86" y="30" font-size="21" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Deployment &amp; Monitoring</text>
+  <text x="86" y="55" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">Serve the model through inference infrastructure and monitor continuously for drift.</text>
+  <text x="1260" y="38" font-size="12" fill="#7a1f2b" font-weight="600" text-anchor="end" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">COMPUTE</text>
+  </g>
+  </g>
+  <g transform="translate(60,831)">
+  <rect x="0" y="0" width="1280" height="46" fill="#2c3e5d"/>
+  <text x="20" y="30" font-size="22" fill="#fafaf6" font-weight="600" font-family="'Georgia', 'Cambria', serif" letter-spacing="2">II.  THE FOUR RESOURCE COSTS</text>
+  <text x="1260" y="30" font-size="13" fill="#cfd4dc" font-style="italic" text-anchor="end" font-family="'Georgia', 'Cambria', serif">Where the money and impact go</text>
+  <g transform="translate(0,70)">
+  <rect x="0" y="0" width="305" height="210" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <rect x="0" y="0" width="305" height="6" fill="#7a1f2b"/>
+  <text x="20" y="42" font-size="13" fill="#7a1f2b" font-weight="600" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="2">DATA</text>
+  <text x="20" y="74" font-size="22" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Trillions of tokens</text>
+  <line x1="20" y1="88" x2="70" y2="88" stroke="#7a1f2b" stroke-width="1"/>
+  <text x="20" y="116" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">GPT-3 trained on ~300 billion</text>
+  <text x="20" y="137" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">tokens; modern models use up to</text>
+  <text x="20" y="158" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~15 trillion. Curation, cleaning &amp;</text>
+  <text x="20" y="179" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">licensing alone can cost $10–30M.</text>
+  </g>
+  <g transform="translate(325,70)">
+  <rect x="0" y="0" width="305" height="210" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <rect x="0" y="0" width="305" height="6" fill="#7a1f2b"/>
+  <text x="20" y="42" font-size="13" fill="#7a1f2b" font-weight="600" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="2">COMPUTE</text>
+  <text x="20" y="74" font-size="22" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Thousands of GPUs</text>
+  <line x1="20" y1="88" x2="70" y2="88" stroke="#7a1f2b" stroke-width="1"/>
+  <text x="20" y="116" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">GPT-4 reportedly used ~25,000</text>
+  <text x="20" y="137" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">NVIDIA A100 GPUs. A single H100</text>
+  <text x="20" y="158" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">costs $25k–40k. Training compute</text>
+  <text x="20" y="179" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">now doubles roughly every 5 months.</text>
+  </g>
+  <g transform="translate(650,70)">
+  <rect x="0" y="0" width="305" height="210" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <rect x="0" y="0" width="305" height="6" fill="#7a1f2b"/>
+  <text x="20" y="42" font-size="13" fill="#7a1f2b" font-weight="600" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="2">ENERGY</text>
+  <text x="20" y="74" font-size="22" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Megawatt-hours</text>
+  <line x1="20" y1="88" x2="70" y2="88" stroke="#7a1f2b" stroke-width="1"/>
+  <text x="20" y="116" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">GPT-3 used ~1,287 MWh — about a</text>
+  <text x="20" y="137" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">year of power for 120 U.S. homes —</text>
+  <text x="20" y="158" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">emitting ~552 t CO₂e. LLaMA 3.1</text>
+  <text x="20" y="179" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">405B drew an estimated ~21.6 GWh.</text>
+  </g>
+  <g transform="translate(975,70)">
+  <rect x="0" y="0" width="305" height="210" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <rect x="0" y="0" width="305" height="6" fill="#7a1f2b"/>
+  <text x="20" y="42" font-size="13" fill="#7a1f2b" font-weight="600" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="2">TIME</text>
+  <text x="20" y="74" font-size="22" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Weeks to months</text>
+  <line x1="20" y1="88" x2="70" y2="88" stroke="#7a1f2b" stroke-width="1"/>
+  <text x="20" y="116" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">A frontier pre-training run occupies</text>
+  <text x="20" y="137" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">a full GPU cluster for weeks or</text>
+  <text x="20" y="158" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">months of continuous computation;</text>
+  <text x="20" y="179" font-size="13" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">GPT-4 reportedly took ~90–100 days.</text>
+  </g>
+  </g>
+  <g transform="translate(60,1151)">
+  <rect x="0" y="0" width="1280" height="46" fill="#7a1f2b"/>
+  <text x="20" y="30" font-size="22" fill="#fafaf6" font-weight="600" font-family="'Georgia', 'Cambria', serif" letter-spacing="2">III.  WHAT FRONTIER MODELS COST TO TRAIN</text>
+  <text x="1260" y="30" font-size="13" fill="#e8cdd2" font-style="italic" text-anchor="end" font-family="'Georgia', 'Cambria', serif">Reported &amp; estimated figures</text>
+  <rect x="0" y="60" width="1280" height="44" fill="#efe8e9" stroke="#d4d4cf" stroke-width="1"/>
+  <text x="20" y="88" font-size="13" fill="#7a1f2b" font-weight="700" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">Model (year)</text>
+  <text x="340" y="88" font-size="13" fill="#7a1f2b" font-weight="700" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">Parameters</text>
+  <text x="560" y="88" font-size="13" fill="#7a1f2b" font-weight="700" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">Training Compute Cost</text>
+  <text x="850" y="88" font-size="13" fill="#7a1f2b" font-weight="700" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="1">Energy / Emissions</text>
+  <rect x="0" y="104" width="1280" height="52" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <text x="20" y="136" font-size="15" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">GPT-3  (2020)</text>
+  <text x="340" y="136" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">175 B</text>
+  <text x="560" y="136" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~$4.6 M</text>
+  <text x="850" y="136" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">1,287 MWh · 552 t CO₂e</text>
+  <rect x="0" y="156" width="1280" height="52" fill="#f7f4f0" stroke="#d4d4cf" stroke-width="1"/>
+  <text x="20" y="188" font-size="15" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">GPT-4  (2023)</text>
+  <text x="340" y="188" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~1 T+ (undisclosed)</text>
+  <text x="560" y="188" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~$78 M compute (&gt;$100 M total)</text>
+  <text x="850" y="188" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~1,750 MWh (est.)</text>
+  <rect x="0" y="208" width="1280" height="52" fill="#ffffff" stroke="#d4d4cf" stroke-width="1"/>
+  <text x="20" y="240" font-size="15" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">Gemini Ultra  (2024)</text>
+  <text x="340" y="240" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">undisclosed</text>
+  <text x="560" y="240" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~$191 M</text>
+  <text x="850" y="240" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">not disclosed</text>
+  <rect x="0" y="260" width="1280" height="52" fill="#f7f4f0" stroke="#d4d4cf" stroke-width="1"/>
+  <text x="20" y="292" font-size="15" fill="#1a1a1a" font-weight="700" font-family="'Georgia', 'Cambria', serif">LLaMA 3.1 405B  (2024)</text>
+  <text x="340" y="292" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">405 B</text>
+  <text x="560" y="292" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~$170 M</text>
+  <text x="850" y="292" font-size="13.5" fill="#3a3a3a" font-family="'Helvetica Neue', Helvetica, sans-serif">~21.6 GWh · 8,930 t CO₂e</text>
+  </g>
+  <g transform="translate(60,1499)">
+  <rect x="0" y="0" width="1280" height="86" fill="#fafaf6" stroke="#7a1f2b" stroke-width="0"/>
+  <line x1="0" y1="0" x2="0" y2="86" stroke="#7a1f2b" stroke-width="3"/>
+  <text x="22" y="28" font-size="12" fill="#7a1f2b" font-weight="600" font-family="'Helvetica Neue', Helvetica, sans-serif" letter-spacing="2">KEY TAKEAWAY</text>
+  <text x="22" y="54" font-size="14" fill="#3a3a3a" font-style="italic" font-family="'Georgia', 'Cambria', serif">The headline parameter count hides the real story: data curation, GPU compute, electricity, and</text>
+  <text x="22" y="76" font-size="14" fill="#3a3a3a" font-style="italic" font-family="'Georgia', 'Cambria', serif">calendar time compound into eight- and nine-figure costs — and a measurable carbon footprint — for every frontier model.</text>
+  </g>
+  <text x="60" y="1615" font-size="11.5" fill="#5a5a5a" font-style="italic" font-family="'Georgia', 'Cambria', serif">Sources: Stanford 2025 AI Index &amp; Epoch AI (compute costs); Patterson et al., 2021 and Litespark Technical Report, 2025 (energy &amp; CO₂e);</text>
+  <text x="60" y="1633" font-size="11.5" fill="#5a5a5a" font-style="italic" font-family="'Georgia', 'Cambria', serif">CUDO Compute, 2025; IBM, Wolfram &amp; OpenAI (training process). Figures are reported or best-available estimates.</text>
+</svg>
