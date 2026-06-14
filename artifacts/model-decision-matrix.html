@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pre-Trained Model Decision Matrix &mdash; Size, Accuracy &amp; Speed Trade-Offs  |  Rishitha Reddy</title>
+  <meta name="description" content="AIML-501 portfolio artifact: a decision matrix comparing six pre-trained models across NLP/Generative AI, computer vision, and tabular domains on size, accuracy, speed, and interpretability, with domain-specific selection recommendations.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%237a1f2b'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='52' font-weight='600' fill='%23fafaf6' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container-wide">
+      <nav class="nav">
+        <a href="../index.html" class="brand">Rishitha <span class="accent">Reddy</span></a>
+        <ul class="nav-links">
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#value">Value</a></li>
+          <li><a href="../index.html#artifacts" class="active">Artifacts</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ARTIFACT HEADER -->
+    <section class="artifact-header">
+      <div class="container">
+        <a href="../index.html#artifacts" class="back-link">Back to artifacts</a>
+        <p class="artifact-meta">Artifact 05  ·  AIML-501  ·  Workshop Five</p>
+        <h1 class="artifact-title">Pre-Trained Model Decision Matrix</h1>
+        <p class="artifact-subtitle">
+          A color-coded decision matrix comparing six pre-trained models across NLP/Generative AI, computer vision, and tabular domains on the trade-offs that actually drive model selection: size, accuracy, speed, and interpretability.
+        </p>
+      </div>
+    </section>
+
+    <!-- INFOGRAPHIC FEATURE -->
+    <section class="infographic-block">
+      <div class="container-wide">
+        <div class="infographic-frame">
+          <img src="../assets/images/model-decision-matrix-infographic.svg" alt="Decision matrix infographic in three sections: (I) why the trade-offs between size, accuracy, speed, and interpretability matter; (II) a color-coded table comparing GPT-4, BERT-base, EfficientNet-B7, MobileNetV2, XGBoost, and Random Forest across those criteria plus best use case; and (III) domain recommendations for NLP/Generative AI, computer vision, and tabular data.">
+        </div>
+        <div class="download-row">
+          <a href="../assets/images/model-decision-matrix-infographic.png" download class="btn primary">Download PNG</a>
+          <a href="../assets/images/model-decision-matrix-infographic.svg" download class="btn">Download SVG</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TITLE -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Title</p>
+        <div class="field-body">
+          <p><strong>Pre-Trained Model Decision Matrix &mdash; Balancing Size, Accuracy, Speed, and Interpretability Across NLP, Vision, and Tabular Domains</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Introduction</p>
+        <div class="field-body">
+          <p>
+            Choosing a pre-trained model is rarely a matter of picking whatever tops a leaderboard. Real deployments force a balance between <strong>model size</strong> (memory and cost), <strong>accuracy</strong> (benchmark performance), <strong>inference speed</strong> (latency), and <strong>interpretability</strong> &mdash; how readily a human can understand why a model produced a given output. Interpretability is the connective thread to my earlier explainability artifact: a model that cannot be inspected is hard to trust, audit, or defend, regardless of its accuracy. This artifact distills those competing pressures into a single decision matrix spanning three domains, so the trade-offs can be compared at a glance rather than buried in separate spec sheets.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Methodology</p>
+        <div class="field-body">
+          <p>
+            I selected six widely used pre-trained models, two per domain, to capture a spread of design philosophies rather than near-duplicates:
+          </p>
+          <ul>
+            <li><strong>NLP / Generative AI &mdash;</strong> GPT-4 (a large generative model) and BERT-base (a compact encoder for language understanding).</li>
+            <li><strong>Computer Vision &mdash;</strong> EfficientNet-B7 (high accuracy) and MobileNetV2 (lightweight, edge-optimized).</li>
+            <li><strong>Tabular Data &mdash;</strong> XGBoost (gradient-boosted trees) and Random Forest (an interpretable ensemble baseline).</li>
+          </ul>
+          <p>
+            For each, I gathered published figures on size (parameter count or footprint), accuracy (standard benchmarks such as ImageNet top-1, GLUE, and MMLU), and inference speed, drawing on the original model papers and the GPT-4 technical report (Tan &amp; Le, 2019; Sandler et al., 2018; Devlin et al., 2019; Chen &amp; Guestrin, 2016; OpenAI, 2023). Each criterion is rendered as a color-coded rating &mdash; green for favorable, amber for moderate, red for costly or limited &mdash; so the matrix communicates the trade-offs visually as well as numerically.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DECISION MATRIX -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Decision Matrix</p>
+        <div class="field-body">
+          <p>The matrix (shown above) compares all six models across size, accuracy, speed, interpretability, and best use case. The headline patterns:</p>
+          <ul>
+            <li><strong>GPT-4</strong> leads on capability but is the heaviest and slowest, with very low interpretability &mdash; justified only when open-ended generation and reasoning are required.</li>
+            <li><strong>BERT-base</strong> delivers strong language-understanding accuracy at a fraction of the size and latency, ideal for classification, NER, and search.</li>
+            <li><strong>EfficientNet-B7</strong> reaches 84.3% ImageNet top-1 accuracy but at 66M parameters and high FLOPs; <strong>MobileNetV2</strong> trades a few points of accuracy (72% top-1) for a roughly 20&times; smaller, far faster model suited to edge devices.</li>
+            <li><strong>XGBoost</strong> and <strong>Random Forest</strong> are small, fast, and highly interpretable, and typically match or beat deep models on structured tabular data.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANALYSIS & RECOMMENDATIONS -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Analysis &amp; Recommendations</p>
+        <div class="field-body">
+          <p>
+            The clearest lesson is that the best model is domain- and constraint-dependent. In <strong>NLP/Generative AI</strong>, reserve large generative models for tasks that genuinely need generation or multi-step reasoning, and default to a compact encoder like BERT for narrower understanding tasks where it is dramatically cheaper and faster. In <strong>computer vision</strong>, let the deployment target decide: EfficientNet when accuracy is paramount and a server is available, MobileNet when the model must run on a phone or in real time. In <strong>tabular data</strong>, gradient-boosted trees and Random Forests should be the first choice, since they combine high accuracy, fast training, and the strongest interpretability of any model here through feature importance and SHAP values. Each model's weakness mirrors its strength: large models buy accuracy with cost and opacity, while small models buy speed and interpretability with a modest accuracy ceiling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONCLUSION -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">Conclusion</p>
+        <div class="field-body">
+          <p>
+            Bigger is not automatically better. Once size, speed, cost, and interpretability are weighed alongside accuracy, the model that wins a benchmark is often the wrong choice for a real product. The disciplined approach is to define the deployment constraints first and then select the smallest, most interpretable model that clears the required performance bar. The matrix in this artifact turns that principle into a practical, reusable tool for AI/ML model selection.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section class="artifact-section">
+      <div class="container">
+        <p class="field-label">References</p>
+        <div class="references">
+
+          <p class="ref">Chen, T., &amp; Guestrin, C. (2016). XGBoost: A scalable tree boosting system. <em>Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining</em>, 785&ndash;794. <a href="https://doi.org/10.1145/2939672.2939785" target="_blank" rel="noopener">https://doi.org/10.1145/2939672.2939785</a></p>
+
+          <p class="ref">Devlin, J., Chang, M.-W., Lee, K., &amp; Toutanova, K. (2019). <em>BERT: Pre-training of deep bidirectional transformers for language understanding</em> (arXiv:1810.04805). arXiv. <a href="https://arxiv.org/abs/1810.04805" target="_blank" rel="noopener">https://arxiv.org/abs/1810.04805</a></p>
+
+          <p class="ref">OpenAI. (2023). <em>GPT-4 technical report</em> (arXiv:2303.08774). arXiv. <a href="https://arxiv.org/abs/2303.08774" target="_blank" rel="noopener">https://arxiv.org/abs/2303.08774</a></p>
+
+          <p class="ref">Sandler, M., Howard, A., Zhu, M., Zhmoginov, A., &amp; Chen, L.-C. (2018). MobileNetV2: Inverted residuals and linear bottlenecks. <em>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</em>, 4510&ndash;4520. <a href="https://arxiv.org/abs/1801.04381" target="_blank" rel="noopener">https://arxiv.org/abs/1801.04381</a></p>
+
+          <p class="ref">Tan, M., &amp; Le, Q. (2019). EfficientNet: Rethinking model scaling for convolutional neural networks. <em>Proceedings of the 36th International Conference on Machine Learning</em>, 6105&ndash;6114. <a href="https://arxiv.org/abs/1905.11946" target="_blank" rel="noopener">https://arxiv.org/abs/1905.11946</a></p>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Rishitha Reddy. All rights reserved.</p>
+      <p class="mono">AIML-501  ·  MODEL DEVELOPMENT  ·  ARTIFACT 05</p>
+    </div>
+  </footer>
+
+</body>
+</html>
